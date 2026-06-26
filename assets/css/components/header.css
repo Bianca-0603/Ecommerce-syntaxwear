@@ -10,10 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
+  padding: 0.225rem 1.25rem;
 }
-
+  
 .logo img {
+  width: 150px;
   height: 48px;
 }
 
@@ -25,6 +26,7 @@
 .nav-center a,
 .nav-right a {
   font-size: 1.25rem;
+  color: #333333;
 }
 
 .nav-center a:hover,
@@ -50,12 +52,11 @@
   opacity: 0.7;
 }
 
-.nav-center {
+.nav-container{  
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     flex:1;
-    margin-left: 10rem;
+    margin: 10rem;
 }
-

@@ -1,0 +1,77 @@
+.categorias {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.categorias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  width: 317px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden; /*esconde tudo que vaze do card*/
+}
+
+.category-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.category-name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.categorias-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+position: absolute; /*será posicionado relativo ao elemento pai*/
+inset: 0; /*atalho para top, right,  bottom e left 0  -  faz a sobreposição ocupar toda área do cartão */
+background-color: rgba(0, 0, 0, 0.25);
+/*opacidade com valor de 0.25*/
+z-index: 1;/*controla a sobreposição dos elementos no eixo Z que é o eixo de profundidade. Coloca o overlay ACIMA do conteúdo do cartão. */
+}
+
+/* Botão centralizado sobre a imagem */
+.card {
+  position: relative;
+}
+
+.category-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /*Sobreposição fica por cima do z-index= 1*/
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8px 18px;
+  border-radius: 25px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+}

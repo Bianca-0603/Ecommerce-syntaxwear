@@ -1,9 +1,9 @@
 /* Reset CSS baseado no reset do Andy Bell */
 
 /* Descomente a linha abaixo apenas para debugar estouro de tela. O outline é desenhado "por cima" do elemento, sem alterar o tamanho de nada. */
-* {
+/* * {
     outline: 1px solid red !important;
-}
+} */
 
 /* Box sizing rules */
 *,

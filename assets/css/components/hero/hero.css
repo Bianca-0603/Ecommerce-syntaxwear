@@ -1,10 +1,9 @@
 .hero-section {
-  background: url("../../../images/banners/hero.jpg") no-repeat center;
+  background: url("../../../../assets/images/banners/hero.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   position: relative;
-  background-size: cover;
-}
+ }
 
 .hero-overlay {
   width: 100%; /* faz a div.hero-overlay ocupar toda a largura do elemento pai (.hero-section).*/
@@ -47,27 +46,10 @@ a parte de layout/overlay da parte de conteúdo real*/
 }
 
 .hero-content .hero-subtitle {
-  font-size: 1.25;
-  font-weight: 400;
-}
-
-.btn {
   font-size: 1.25rem;
-  width: 161px;
-  height: 48px;
-  border-radius: 25px;
-  color: #ffffff;
   font-weight: 400;
-  padding: 10px 20px;
-  transition: background-color 0.5s, border 0.5s;
 }
 
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  padding: 10px 20px;
-  line-height: 23px;
-}
 
 .btn-filled {
   background-color: #ffffff;

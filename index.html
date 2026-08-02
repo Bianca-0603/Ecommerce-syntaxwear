@@ -17,56 +17,57 @@
     <link rel="stylesheet" href="./assets/css/components/header.css" />
     <link rel="stylesheet" href="./assets/css/components/hero/hero.css" />
     <link rel="stylesheet" href="./assets/css/components/products-card.css" />
-    
+    <link rel="stylesheet" href="./assets/css/components/product-grid.css" />
   </head>
   <body>
-    <!-- Header com logo e navegação -->
-    <header class="header">
-      <h1 class="logo">
-        <a href="/" aria-label="SyntaxeWear - Tênis e Sneakers Online">
-          <img
-            src="./assets/images/logo/logo.svg"
-            alt="SyntaxeWear - Tênis e Sneakers Online" />
-        </a>
-      </h1>
-
-      <nav class="nav-center" aria-label="Categorias-principais">
-        <!--fornece um rótulo de texto invisível para os leitores de tela -->
-        <ul>
-          <li><a href="#" aria-label="Masculino">Masculino</a></li>
-          <li><a href="#" aria-label="Feminino">Feminino</a></li>
-          <li><a href="#" aria-label="Outlet">Outlet</a></li>
-        </ul>
-      </nav>
-
-      <nav class="nav-right" aria-label="Menu direito">
-        <ul>
-          <li><a href="#" aria-label="Nossas lojas">Nossas lojas</a></li>
-          <li><a href="#" aria-label="Sobre">Sobre</a></li>
-
-          <li>
-            <a href="#" aria-label="Minha conta">
-              <img src="./assets/images/icons/user.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Ajuda">
-              <img src="./assets/images/icons/help.svg" alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#" title="Carrinho" aria-label="Carrinho">
-              <img src="./assets/images/icons/bag.svg" alt="" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Conteúdo Principal -->
     <main>
+      <!-- Header com logo e navegação -->
+      <header class="header">
+        <h1 class="logo">
+          <a href="/" aria-label="SyntaxeWear - Tênis e Sneakers Online">
+            <img
+              src="./assets/images/logo/logo.svg"
+              alt="SyntaxeWear - Tênis e Sneakers Online" />
+          </a>
+        </h1>
+
+        <nav class="nav-center" aria-label="Categorias-principais">
+          <!--fornece um rótulo de texto invisível para os leitores de tela -->
+          <ul>
+            <li><a href="#" aria-label="Masculino">Masculino</a></li>
+            <li><a href="#" aria-label="Feminino">Feminino</a></li>
+            <li><a href="#" aria-label="Outlet">Outlet</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-right" aria-label="Menu direito">
+          <ul>
+            <li><a href="#" aria-label="Nossas lojas">Nossas lojas</a></li>
+            <li><a href="#" aria-label="Sobre">Sobre</a></li>
+
+            <li>
+              <a href="#" aria-label="Minha conta">
+                <img src="./assets/images/icons/user.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Ajuda">
+                <img src="./assets/images/icons/help.svg" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" title="Carrinho" aria-label="Carrinho">
+                <img src="./assets/images/icons/bag.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Conteúdo Principal -->
+
       <!-- Seção Herói -->
       <section class="hero-section">
         <div class="hero-overlay">
@@ -76,7 +77,9 @@
 
             <div class="hero-buttons">
               <a href="#" class="btn btn-outline" aria-label="Ver modelos">
-                Ver modelos
+                <span>Ver</span>
+                ,
+                <span>modelos</span>
               </a>
               <a href="#" class="btn btn-filled" aria-label="Comprar">
                 Comprar
@@ -93,8 +96,8 @@
         <div class="categorias-container">
           <div class="card">
             <a href="#" class="category-link" title="Casual">
-                            <span class="overlay"></span>
-              
+              <span class="overlay"></span>
+
               <span class="category-name btn btn-outline">Casual</span>
               <img
                 src="./assets/images/banners/casual.jpg"
@@ -104,8 +107,8 @@
 
           <div class="card">
             <a href="#" class="category-link" title="Esporte">
-                            <span class="overlay"></span>
-              
+              <span class="overlay"></span>
+
               <span class="category-name btn btn-outline">Esporte</span>
               <img
                 src="./assets/images/banners/esportivo.jpg"
@@ -114,8 +117,8 @@
           </div>
 
           <div class="card">
-            <a href="#" class="category-link"  title="Moderno">
-                          <span class="overlay"></span>
+            <a href="#" class="category-link" title="Moderno">
+              <span class="overlay"></span>
               <span class="category-name btn btn-outline">Moderno</span>
               <img
                 src="./assets/images/banners/moderno.jpg"
@@ -125,18 +128,36 @@
 
           <div class="card">
             <a href="#" class="category-link" title="Futurista">
-                        <span class="overlay"></span>
-              <span class="category-name btn btn-outline">Futurista</span><img src="./assets/images/banners/futurista.jpg" alt="Tênis futurista">
+              <span class="overlay"></span>
+              <span class="category-name btn btn-outline">Futurista</span>
+              <img
+                src="./assets/images/banners/futurista.jpg"
+                alt="Tênis futurista" />
             </a>
           </div>
         </div>
       </section>
 
       <!-- Grid com Produtos em Destaque -->
-      <section class="featured-products">
-        <div class="container">
-          <!-- Produtos em grid serão adicionados aqui -->
+      <section class="grid-section">
+        <!-- <div class="card top1">  top 1 identifica a area do grid e as imagens de fundo e o card estiliza outras coisas nos cartões  -->
+        <div class="card-grid top1">
+          <div class="top1-content">
+          <h3 class="card-title">Krypton One</h3>
+          <p class="card-subtitle">Estilo urbano com atitude</p>
+          <div class="cta-group">
+            <a href="#" class="btn btn-outline">Feminino</a>
+            <a href="#" class="btn btn-outline">Masculino</a>
+          </div>
         </div>
+        </div>
+
+        <div class="card-grid top2"></div>
+        <div class="card-grid model"></div>
+        <div class="card-grid midR"></div>
+        <div class="card-grid bottomL"></div>
+        <div class="card-grid bottomR"></div>
+        <!-- Produtos em grid serão adicionados aqui -->
       </section>
     </main>
 

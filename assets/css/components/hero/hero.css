@@ -2,6 +2,7 @@
   background: url("../../../../assets/images/banners/hero.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
+  border-radius: 20px;
   position: relative;
  }
 
@@ -35,8 +36,7 @@ a parte de layout/overlay da parte de conteúdo real*/
 .hero-buttons{
   display: flex;
   gap: 16px;
-}                                                                                                                   
-
+}                                                                                                    
 .hero-content .hero-title {
   font-size: 1.875rem;
   margin-bottom: 40px;
